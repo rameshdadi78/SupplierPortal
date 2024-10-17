@@ -1,0 +1,142 @@
+XPLORIA:
+
+Java Coding Standards
+
+1. Package Convention Should Be Followed
+   Example: Package names should be in all lowercase, and meaningful, to avoid conflicts.
+     // Correct:
+     package com.companyname.projectname.service;
+     
+     // Incorrect:
+     package com.CompanyName.ProjectName.Service;
+
+2. Unused Imports Should Not Be Used
+   Example: Remove imports that are not being used in the code to maintain clean code.
+     import java.util.List;  // Correct (if used)
+     import java.util.Map;   // Incorrect (if not used)
+
+3. Align the File Correctly Using Ctrl+I (in Eclipse or IntelliJ)
+   Explanation: Ensure proper indentation and consistent formatting.
+     public class Example {
+         public void doSomething() {
+             if (true) {
+                 System.out.println("Correct Alignment");
+             }
+         }
+     }
+
+4. Variable Creation Should Happen Outside the Loop
+   Example: Declare variables outside loops to avoid unnecessary object creation or memory overhead.
+     // Correct:
+     int sum = 0;
+     for (int i = 0; i < numbers.length; i++) {
+         sum += numbers[i];
+     }
+     
+     // Incorrect:
+     for (int i = 0; i < numbers.length; i++) {
+         int sum = 0;
+         sum += numbers[i];
+     }
+
+5. JavaDocs for Methods
+   Example: Each public method should have a JavaDoc explaining what it does, parameters, and return values.
+     /**
+      * Adds two numbers.
+      *
+      * @param a the first number
+      * @param b the second number
+      * @return the sum of a and b
+      */
+     public int add(int a, int b) {
+         return a + b;
+     }
+
+6. No Data Should Be Hardcoded
+   Example: Avoid hardcoding values; use constants or external configurations instead.
+     // Correct:
+     public static final String DEFAULT_NAME = "John";
+     
+     // Incorrect:
+     String name = "John"; // Hardcoded
+
+7. Remove Unnecessary Sysouts, Keep Useful Ones for Debugging
+   Example: Eliminate excessive System.out.println() calls to clean up logs but retain meaningful debug statements.
+     // Correct:
+     if (debugMode) {
+         System.out.println("Current value: " + value);
+     }
+     
+     // Incorrect:
+     System.out.println("Debugging...");  // Not informative
+
+Additional Points
+
+8. Use Meaningful Variable and Method Names
+   Variables and methods should have descriptive names to convey their purpose.
+     // Correct:
+     int numberOfStudents = 25;
+     
+     // Incorrect:
+     int n = 25;
+
+9. Use Constants for Repeated Values
+   If a value appears multiple times in the code, consider defining it as a constant.
+     // Correct:
+     public static final int MAX_RETRIES = 5;
+     
+     // Incorrect:
+     int retries = 5;
+
+10. Use Proper Exception Handling
+   Avoid catching general exceptions; catch specific exceptions, and handle or log them properly.
+     // Correct:
+     try {
+         // Some code
+     } catch (FileNotFoundException e) {
+         // Handle this specific exception
+     }
+     
+     // Incorrect:
+     try {
+         // Some code
+     } catch (Exception e) {
+         // Catch-all
+     }
+
+11. Avoid Deep Nesting
+   Keep the code readable by avoiding deep nested structures.
+     // Correct:
+     if (condition1) {
+         if (condition2) {
+             // Code
+         }
+     }
+     
+     // Incorrect:
+     if (condition1) {
+         if (condition2) {
+             if (condition3) {
+                 if (condition4) {
+                     // Code
+                 }
+             }
+         }
+     }
+
+12. Use StringBuilder for String Concatenation in Loops
+   Instead of using + for string concatenation inside loops, use StringBuilder for better performance.
+     // Correct:
+     StringBuilder result = new StringBuilder();
+     for (String str : list) {
+         result.append(str);
+     }
+     
+     // Incorrect:
+     String result = "";
+     for (String str : list) {
+         result += str;
+     }
+
+13. Use proper  naming convention for properties file
+

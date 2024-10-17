@@ -1,0 +1,100 @@
+/* ----------------Table--------------------------- */
+.Nfhbm{      /* Outter Box */
+    padding: 10px 20px;
+    }
+  
+  .rdt_Table {                /* Complete Table*/
+      border: 1.5px solid var(--light_black);
+      border-radius: 0px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      border-radius: 3px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   
+  }
+  .sc-dhKdPU.kQfkgY.rdt_TableRow{
+    /* border-bottom: 1px solid#ccc; */
+    transition: all 0.1s;
+    /* background-color: red; */
+  }
+  .sc-dhKdPU.kQfkgY.rdt_TableRow:hover {                  /* Each Row Data*/
+    background-color: var(--light_blue);
+  }
+  .sc-dhKdPU.kQfkgY.rdt_TableRow:nth-child(even):hover{
+  background-color: var(--light_blue);
+  }
+  
+  .sc-dhKdPU.kQfkgY.rdt_TableRow:nth-child(1){
+    border-top: 1.5px solid var(--light_black);
+  }
+  .sc-dhKdPU.kQfkgY.rdt_TableRow:nth-child(even){
+    background-color: var(--hover);
+  }
+  
+  .rdt_TableCell {   /* Each data cell*/
+    padding: 15px 10px;
+    margin: 2px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light_black);
+  }
+  /* .rdt_TableBody{
+    font-size: 14px;
+    background-color: red;
+  } */
+  
+  .rdt_TableCol{
+    font-size: 17px;
+    font-weight:600;
+    background-color: #ffffff;
+    color: var(--blue);
+  }
+  
+  .bRGCiY{
+    border:none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 5px  40px;
+  }
+  .highlight {
+    background-color: #dedede; /* Change to your desired highlight color */
+}
+/* -------------------------------Ag Grid Styles------------------------------ */
+
+.ag-header-cell{
+  color: var(--blue);
+  font-size: 15.5px;
+  font-weight: 550;
+  border-bottom:1.5px solid var(--black);
+  letter-spacing: 0.8px;
+}
+.ag-ltr .ag-cell {
+ display: flex;
+ justify-content:flex-start;
+ align-items: center;
+user-select: text;
+color:var(--black);
+font-weight: 450;
+}
+.ag-row-animation .ag-row{
+  border-bottom:1.5px solid var(--hover);
+}
+.ag-row-animation .ag-row:first-child{
+  border-top:none !important;
+}
+
+.ag-header-container{
+  background-color: #ffffff;
+  height: 250px;
+  background-color: var(--hover);
+}
+.ag-root-wrapper{
+  border:1.5px solid var(--black) !important;
+  border-radius: 4px;
+}
+
+/* ----- */

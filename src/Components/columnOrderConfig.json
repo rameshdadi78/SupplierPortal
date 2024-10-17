@@ -1,0 +1,231 @@
+{
+  "columnOrder": [
+    "type",
+    "name",
+    "rev",
+    "state",
+    "owner",
+    "project",
+    "organization",
+    "uom_type",
+    "unit_of_measure",
+    "policy",
+    "responsible_design_engineer",
+    "target_cost",
+    "description",
+    "releasedate",
+    "service_make_buy_code",
+    "originated",
+    "material_category",
+    "spare_part",
+    "tooling_cost",
+    "part_classification",
+    "estimated_cost",
+    "lead_time",
+    "modified",
+    "islastrevision",
+    "objectId"
+  ],
+  
+  "PartDetailsSections": {
+    "Basic Attributes": [
+      "Type",
+      "Name",
+      "Revision",
+      "State",
+      "Owner",
+      "Project",
+      "Organization",
+      "UOM Type",
+      "Unit Of Measure",
+      "Policy",
+      "Responsible Engineer"
+    ],
+    "Other Attributes": [
+      "Target Cost",
+      "Description",
+      "Release Date",
+      "Make Buy",
+      "Originated",
+      "Material Category",
+      "Spare Part",
+      "Tooling Cost",
+      "Part Classification",
+      "Estimated Cost",
+      "Lead Time",
+      "Modified",
+      "LastRevision"
+    ]
+  },
+  "Deviationsections": {
+    "Basic Information": [
+      "Name",
+      "Type",
+      "State",
+      "Owner",
+      "Priority",
+      "Title",
+      "Description",
+      "Project",
+      "Organization",
+      "Actual Start Date",
+      "Actual End Date"
+    ],
+    "Project Management": [
+      "Internal Priority",
+      "ApprovedDate",
+      "CancelledDate",
+      "ClosedDate"
+    ],
+    "Issue Tracking": [
+      "Action Taken",
+      "Escalation Required",
+      "Responsible Design Engineer"
+    ]
+  },
+  "ChangeActionSlidein": {
+    "Basic Information": [
+      "Name",
+      "Type",
+      "State",
+      "Owner",
+      "Synopsis",
+      "Description"
+    ],
+    "Project Management": [
+      "Reason for Change",
+      "Category of Change",
+      "Organization"
+    ],
+    "Issue Tracking": [
+      "Modified",
+      "Project"
+    ]
+  },
+  "SpecificationSlidein": {
+    "Basic Information": [
+      "Type",
+      "Name", 
+      "Rev", 
+      "Policy",
+      "State", 
+      "Organization",
+      "Project", 
+      "Owner",
+      "Title"
+     
+    ],
+    "Project Management": [
+      "Originated",
+      "Modified", 
+      "Current State Attained date",
+      "Releasedate", 
+      "Originator",
+      "Is version object", 
+      "Move files to version",
+      "Description",
+      "Suspend versioning", 
+      "Access type", 
+      "Checkin reason",
+      "Language", 
+      "File created date",
+      "File dimension"
+    ],
+    "Issue Tracking": [
+      "File duration", 
+      "File modified date",
+      "File size",
+      "File type",
+      "Designated user",
+      "Model type", 
+      "Ief lockinformation",
+      "Mcadinteg sourceobj", 
+      "Ief uuid", 
+      "Dsc isreplacementdone",
+      "Ief specification", 
+      "Ief newrevisedfrom",
+      "Mcadinteg clonedfrom",
+      "Renamed from", 
+      "Ief excludefrombom", 
+      "Ief connectedeco", 
+      "Cad type",
+      "Mcad label",
+      "Mcadinteg comment",
+      "Source", 
+      "Ief ebomsync parttypeattribute",
+      "File name", 
+      "Active version ids"
+    ]
+  },
+  "EBOMSlidein": {
+    "Basic Information": [
+      "Type",
+      "Name", 
+      "Revision",        
+      "Organization",
+      "Project", 
+      "Owner"
+     
+    ],
+  
+    "Instance Information": [
+      "Description",
+      "VPM Visible",
+      "Quantity",
+      "Find Number"
+    ]
+  },
+  "Deviation": {
+    "Basic Information": [
+      "Name",
+      "Type",
+      "State",
+      "Owner",
+      "Priority",
+      "Title",
+      "Description",
+      "Project",
+      "Organization",
+      "Actual Start Date",
+      "Actual End Date",
+      "Processed Date",
+      "Processed By",
+      "Processing Comment"
+    ],
+    "Project Management": [
+      "Internal Priority",
+      "ApprovedDate",
+      "CancelledDate",
+      "ClosedDate"
+    ],
+    "Issue Tracking": [
+      "Action Taken",
+      "Escalation Required",
+      "Responsible Design Engineer"
+    ]
+  },
+  "ChangeAction": {
+    "Basic Information": [
+      "Name",
+      "Type",
+      "State",
+      "Owner",
+      "Synopsis",
+      "Description",
+      "Processed Date",
+      "Processed By",
+      "Processing Comment"
+
+    ],
+    "Project Management": [
+      "Reason for Change",
+      "Category of Change",
+      "Organization"
+    ],
+    "Issue Tracking": [
+      "Modified",
+      "Project"
+    ]
+  }
+}
+

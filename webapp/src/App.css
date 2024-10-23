@@ -1,0 +1,50 @@
+:root {
+  --white: #fff;
+  --black: #0f0f0f;
+  --blue: #1889e6;
+  --light_black: #606060;
+  --hover: #f2f2f2;
+  --light_blue: #d1e0ff;
+  --ligt_red: #f88c8c;
+  --dark_red: rgb(250, 81, 81);
+}
+.loading-overlay {
+  position: absolute;
+  left: 0;
+  bottom: -62%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+}
+
+.loading-logo {
+  animation: rotate 2s linear infinite;
+  width: 100px; /* Set image width */
+  height: 100px; /* Set image height */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the loader */
+  height: auto; /* Adjust height */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it’s on top */
+}

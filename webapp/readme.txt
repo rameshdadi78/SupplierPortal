@@ -1,1 +1,0 @@
-This folder contains src of UI -react
